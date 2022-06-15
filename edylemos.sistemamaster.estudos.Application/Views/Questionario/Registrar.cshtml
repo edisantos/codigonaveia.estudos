@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Registrar";
+}
+
+<div class="container">
+    <br />
+    <div class="card">
+        <div class="card-body">
+            <form asp-area="Questionario" asp-action="Registrar" method="post">
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <h5 class="text text-center">Adicione a baixo um nome para o formulário que deseja criar</h5>
+                        <input type="text" name="QuestionarioTitulo" class="form-control" placeholder="Digite um  titulo para o questionario" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Criar um Formulário</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div asp-validation-summary="All" class="text text-danger"></div>
+                @if (TempData["SucessoMensagem"]!=null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["SucessoMensagem"]
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Application", "1.Application", "{10BC9FAF-09EC-444D-BEC8-9C06FA7033FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Api", "2.Api", "{53A51093-325A-48A0-8807-03CF4BCD3E60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{C44EDDDF-FE74-4485-AF01-1ACC278A7E73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infra", "4.Infra", "{B82B2C60-77B2-4BD4-96B6-D63177FE97B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Data", "1.Data", "{22C656AD-F901-4F1E-8F32-A66DAECDA807}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.CrosCutting", "2.CrosCutting", "{796DF205-BBC4-464D-83F9-304E763B170F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edylemoss.sistemamaster.estudoss.Data", "edylemoss.sistemamaster.estudoss.Data\edylemoss.sistemamaster.estudoss.Data.csproj", "{19524360-B3D0-45B0-84CF-B37D111D06D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edylemos.sistemamaster.estudos.Domain", "edylemos.sistemamaster.estudos.Domain\edylemos.sistemamaster.estudos.Domain.csproj", "{8AE65ED5-75E7-4D16-8324-D2F5C2549F42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Services", "4.Services", "{3B7FC2E9-FCBD-4D5B-AA66-D19D70BBACA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edylemos.sistemamaster.estudos.Services", "edylemos.sistemamaster.estudos.Services\edylemos.sistemamaster.estudos.Services.csproj", "{8E187266-7A52-4FCA-AAE1-97832575D6C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "edylemos.sistemamaster.estudos.Api", "edylemos.sistemamaster.estudos.Api\edylemos.sistemamaster.estudos.Api.csproj", "{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "edylemos.sistemamaster.estudos.Application", "edylemos.sistemamaster.estudos.Application\edylemos.sistemamaster.estudos.Application.csproj", "{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19524360-B3D0-45B0-84CF-B37D111D06D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19524360-B3D0-45B0-84CF-B37D111D06D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19524360-B3D0-45B0-84CF-B37D111D06D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19524360-B3D0-45B0-84CF-B37D111D06D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE65ED5-75E7-4D16-8324-D2F5C2549F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE65ED5-75E7-4D16-8324-D2F5C2549F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE65ED5-75E7-4D16-8324-D2F5C2549F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE65ED5-75E7-4D16-8324-D2F5C2549F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E187266-7A52-4FCA-AAE1-97832575D6C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E187266-7A52-4FCA-AAE1-97832575D6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E187266-7A52-4FCA-AAE1-97832575D6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E187266-7A52-4FCA-AAE1-97832575D6C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22C656AD-F901-4F1E-8F32-A66DAECDA807} = {B82B2C60-77B2-4BD4-96B6-D63177FE97B6}
+		{796DF205-BBC4-464D-83F9-304E763B170F} = {B82B2C60-77B2-4BD4-96B6-D63177FE97B6}
+		{19524360-B3D0-45B0-84CF-B37D111D06D1} = {22C656AD-F901-4F1E-8F32-A66DAECDA807}
+		{8AE65ED5-75E7-4D16-8324-D2F5C2549F42} = {C44EDDDF-FE74-4485-AF01-1ACC278A7E73}
+		{8E187266-7A52-4FCA-AAE1-97832575D6C1} = {3B7FC2E9-FCBD-4D5B-AA66-D19D70BBACA2}
+		{CFC8DE58-E20E-4491-BE20-4E5855ACBFDB} = {53A51093-325A-48A0-8807-03CF4BCD3E60}
+		{A2A05C06-5F0F-48D1-ABD9-7B4E6775A756} = {10BC9FAF-09EC-444D-BEC8-9C06FA7033FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4627B3B1-8364-4BBF-BC3A-7E715068D99F}
+	EndGlobalSection
+EndGlobal

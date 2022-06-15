@@ -1,0 +1,67 @@
+﻿@model edylemos.sistemamaster.estudos.Domain.Entidades.Questionarios.EntidadePerguntas
+@{
+    ViewData["Title"] = "RegistrarPerguntas";
+}
+
+<div class="container">
+    <br>
+    @if (TempData["SucessoMensagem"] != null)
+    {
+        <div class="alert alert-success">
+            <h5> @TempData["SucessoMensagem"] </h5>
+
+        </div>
+        <hr />
+
+    }
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success">
+            <h5> @TempData["MensagemSucesso"] </h5>
+
+        </div>
+        <hr />
+    }
+    <div class="card">
+        <div class="card-body">
+            <form asp-area="Perguntas" asp-action="RegistrarPerguntas" method="post">
+                <input asp-for="QuestionarioId" type="hidden" />
+                <div class="row g-3">
+                    <div class="col-sm-12">
+                        <h5 class="text text-center">Adicione um pergunta</h5>
+                        <input type="text" asp-for="Pergunta" class="form-control" placeholder="Descreva a pergunta" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Criar pergunta</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div asp-validation-summary="All" class="text text-danger"></div>
+
+            </form>
+        </div>
+    </div>
+    @if (ViewBag.ListaPergunta!=null)
+    {
+        foreach (var item in @ViewBag.ListaPergunta)
+        {
+           
+            <table class="table">
+                <tr>
+                    <td>
+                        <label>N°:  @item.PerguntaId</label>
+                    </td>
+                    <td>
+                        <label><i class="fa-solid fa-comment-question"></i> @item.Pergunta</label>
+                    </td>
+                </tr>
+            </table>
+            
+        }
+    }
+
+
+</div>
+

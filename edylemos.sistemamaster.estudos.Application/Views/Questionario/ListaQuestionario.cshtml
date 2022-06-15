@@ -1,0 +1,36 @@
+﻿@model IEnumerable<edylemos.sistemamaster.estudos.Domain.Entidades.Questionarios.EntidadeQuestionario>
+@{
+    ViewData["Title"] = "ListaQuestionario";
+}
+
+<div class="container">
+    <br />
+    @if (Model != null)
+    {
+        <h1 class="text text-center">Lista de Questionarios Ativos</h1>
+        <hr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id Questionário</th>
+                    <th>Titulo</th>
+                    <th></th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.QuestionarioId</td>
+                        <td>@item.QuestionarioTitulo</td>
+                        <td>
+                            @Html.ActionLink("Responder", "RegistroResposta","Resposta", new {QuestionarioId = @item.QuestionarioId})
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
